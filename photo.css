@@ -1,0 +1,89 @@
+html {
+    background: #000;
+}
+
+* {
+    z-index: 2;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    color: #ffffff;
+
+}
+
+header {
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 20px;
+
+    color: #ffffff;
+}
+
+header nav a:hover {
+    color: #d99bff;
+}
+
+header img {
+    width: 70px;
+}
+
+a {
+    text-decoration: none;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-self: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+button {
+    padding: 10px;
+    box-sizing: border-box;
+    background: #d99bff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.In, .Out {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+}
+
+.Out{
+    display: none;
+}
+
+img {
+    margin: 10px 0;
+    max-width: 90%;
+}
+
+img:hover{
+    box-shadow: 1px 1px 15px 10px #d99bff;
+    border-radius: 15px;
+}

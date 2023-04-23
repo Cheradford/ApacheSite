@@ -2,15 +2,19 @@
 
 html {
     background: #000;
+    margin: 0;
 }
 
 * {
+    box-sizing: border-box;
     z-index: 2;
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
     color: #ffffff;
 }
+
+
 
 header {
     margin: 0 30px;
