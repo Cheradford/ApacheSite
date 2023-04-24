@@ -30,7 +30,7 @@
         $files = scandir($dir);
         $i = 0;
         foreach($files as $file) {
-          if ($file != "." && $file != ".." && $i < 50) {
+          if ($file != "." && $file != "..") {
             echo "<img src=\"$dir$file\">";
             $i++;
           }
@@ -43,7 +43,7 @@
         $files = scandir($dir);
         $i = 0;
         foreach($files as $file) {
-          if ($file != "." && $file != ".." && $i < 50) {
+          if ($file != "." && $file != "..") {
             echo "<img src=\"$dir$file\">";
             $i++;
           }
