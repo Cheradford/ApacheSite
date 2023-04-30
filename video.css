@@ -1,0 +1,71 @@
+html {
+    background: #000;
+}
+
+* {
+    z-index: 2;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    color: #ffffff;
+
+}
+
+header {
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 20px;
+
+    color: #ffffff;
+}
+
+header nav a:hover {
+    color: #d99bff;
+}
+
+header img {
+    width: 70px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.In {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    
+}
+
+
+video {
+    margin: 10px 0;
+    max-width: 90%;
+}
+
+video:hover{
+    box-shadow: 1px 1px 15px 10px #d99bff;
+    border-radius: 15px;
+}
