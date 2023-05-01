@@ -26,7 +26,7 @@
         $files = scandir($dir);
         $i = 0;
         foreach ($files as $file) {
-            if ($file != "." && $file != "..") {
+            if ($file != "." && $file != ".." && $file != "temp") {
                 echo "<video controls src=\"$dir$file\" ></video>";
 
                 $i++;
