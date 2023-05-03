@@ -18,6 +18,7 @@
             <a href="index.html#WhereAmI">Контакты</a>
             <a href="photo.php">Фотоальбом</a>
             <a href="video.php">Видео</a>
+            <a href="documents.php">Документы</a>
         </nav>
     </header>
     <div class="buttons">

@@ -23,17 +23,26 @@
     <div class="In">
 
         <?php
-        $dir = "VideoOut/";
+        $dir = "LrPDF/";
         $files = scandir($dir);
-        $i = 0;
         foreach ($files as $file) {
             if ($file != "." && $file != "..") {
-                echo "<video controls src=\"$dir$file\" ></video>";
+                echo "<embed src=\"$dir$file\" type=\"application/pdf\" width=\"100%\" height=\"600px\" />";
 
-                $i++;
             }
         }
         ?>
+        <?php
+        $dir = "LrDOC/";
+        $files = scandir($dir);
+        foreach ($files as $file) {
+            if ($file != "." && $file != "..") {
+                echo "<a href=\"$dir$file\" download>$file</a>";
+
+            }
+        }
+        ?>
+
     </div>
 
 
