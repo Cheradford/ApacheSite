@@ -4,8 +4,7 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- <link rel="stylesheet" href="style.css" type="text/css" /> -->
-    <link rel="stylesheet" href="video.css" type="text/css" />
-    <script src="Scripts/script.js"></script>
+    <link rel="stylesheet" href="documents.css" type="text/css" />
 </head>
 
 <body>
@@ -20,6 +19,18 @@
             <a href="documents.php">Документы</a>
         </nav>
     </header>
+    <ul>
+        <?php
+        $dir = "LrDOC/";
+        $files = scandir($dir);
+        foreach ($files as $file) {
+            if ($file != "." && $file != "..") {
+                echo "<li><a href=\"$dir$file\" download>$file</a></li>";
+
+            }
+        }
+        ?>
+    </ul>
     <div class="In">
 
         <?php
@@ -32,16 +43,7 @@
             }
         }
         ?>
-        <?php
-        $dir = "LrDOC/";
-        $files = scandir($dir);
-        foreach ($files as $file) {
-            if ($file != "." && $file != "..") {
-                echo "<a href=\"$dir$file\" download>$file</a>";
 
-            }
-        }
-        ?>
 
     </div>
 
