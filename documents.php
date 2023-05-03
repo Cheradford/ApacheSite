@@ -19,6 +19,8 @@
             <a href="documents.php">Документы</a>
         </nav>
     </header>
+
+    <div class="In">
     <ul>
         <?php
         $dir = "LrDOC/";
@@ -31,8 +33,6 @@
         }
         ?>
     </ul>
-    <div class="In">
-
         <?php
         $dir = "LrPDF/";
         $files = scandir($dir);
