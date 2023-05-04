@@ -72,9 +72,9 @@ embed:hover{
 }
 
 ul{
-    margin: 10px 30px;
+    margin: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 100px;
+    gap: 30px;
 }
 
