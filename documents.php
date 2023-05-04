@@ -21,7 +21,18 @@
     </header>
 
     <div class="In">
+    <ul>
+        <?php
+        $dir = "LrDOC/";
+        $files = scandir($dir);
+        foreach ($files as $file) {
+            if ($file != "." && $file != "..") {
+                echo "<li><a href=\"$dir$file\" download>$file</a></li>";
 
+            }
+        }
+        ?>
+    </ul>
         <?php
         $dir = "LrPDF/";
         $files = scandir($dir);
