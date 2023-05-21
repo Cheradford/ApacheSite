@@ -67,7 +67,7 @@ button {
     border: 1px solid #000000;
 }
 
-.In, .Out {
+.Out {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -76,9 +76,6 @@ button {
     
 }
 
-.Out{
-    display: none;
-}
 
 img {
     margin: 10px 0;
